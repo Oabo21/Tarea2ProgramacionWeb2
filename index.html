@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colección</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Colección</h1>
+    <div class="elementos">
+      <div class="peliculas">
+        <h1>Películas</h1>
+        <label for="titulo">Título</label>
+        <input id="titulo" name="titulo" type="text"><br>
+        <label for="duracion">Duración</label>
+        <input id="duracion" name="duracion" type="text"><br>
+        <label for="descripcion">Descripción</label>
+        <input id="descripcion" name="descripcion" type="text"><br>
+        <label for="clasificacion">Clasificación</label>
+        <input id="clasificacion" name="clasificacion" type="text"><br>
+        <label for="anio">Año</label>
+        <input id="anio" name="anio" type="text">
+        <button onclick="agregarPelicula()">Agregar película</button>
+        <hr>
+        <label for="ver-pelicula">Ingrese el título de la película que quiere ver</label>
+        <input id="ver-pelicula" name="ver-pelicula" type="text">
+        <button onclick="verPelicula()">Buscar película</button>
+        <p><b>Título: </b> <span id="titulo-encontrado"></span></p>
+        <p><b>Descripción: </b> <span id="descripcion-encontrada"></span></p>
+        <p><b>Clasificación: </b> <span id="clasificacion-encontrada"></span></p>
+        <p><b>Duración: </b> <span id="duracion-encontrada"></span></p>
+        <p><b>Año: </b> <span id="anio-encontrado"></span></p>
+        <hr>
+        <label for="titulo-pelicula-borrar">Ingrese el título de la película a borrar</label>
+        <input id="titulo-pelicula-borrar" name="titulo-pelicula-borrar" type="text">
+        <button onclick="borrarPelicula()">Borrar película</button>
+      </div>
+      <div class="personas"> 
+        <h1>Personas</h1>
+        <label for="nombre-persona">Nombre</label>
+        <input id="nombre-persona" name="nombre-persona" type="text"><br>
+        <label for="edad">Edad</label>
+        <input id="edad" name="edad" type="text"><br>
+        <label for="sexo">Sexo</label>
+        <input id="sexo" name="sexo" type="text"><br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <input id="nacionalidad" name="nacionalidad" type="text"><br>
+      
+        <button onclick="agregarPersona()">Agregar persona</button>
+        <hr>
+        <label for="ver-persona">Ingrese nombre de la persona que quiere ver</label>
+        <input id="ver-persona" name="ver-persona" type="text">
+        <button onclick="verPersona()">Buscar persona</button>
+        <p><b>Nombre: </b> <span id="nombre-persona-encontrado"></span></p>
+        <p><b>Edad: </b> <span id="edad-encontrada"></span></p>
+        <p><b>Sexo: </b> <span id="sexo-encontrado"></span></p>
+        <p><b>Nacionalidad: </b> <span id="nacionalidad-encontrada"></span></p>
+        <hr>
+        <label for="nombre-persona-borrar">Ingrese el nombre de la persona a borrar</label>
+        <input id="nombre-persona-borrar" name="nombre-persona-borrar" type="text">
+        <button onclick="borrarPersona()">Borrar película</button>
+      </div>
+      <div class="libros">
+        <h1>Libros</h1>
+        <label for="titulo-libro">Titulo</label>
+        <input id="titulo-libro" name="titulo-libro" type="text"><br>
+        <label for="paginas-libro">Paginas</label>
+        <input id="paginas-libro" name="paginas-libro" type="text"><br>
+        <label for="descripcion-libro">Descripción</label>
+        <input id="descripcion-libro" name="descripcion-libro" type="text"><br>
+        <label for="clasificacion-libro">Clasificación</label>
+        <input id="clasificacion-libro" name="clasificacion-libro" type="text"><br>
+        <button onclick="agregarLibro()">Agregar libro</button>
+        <hr>
+        <label for="ver-libro">Ingrese titulo del libro que quiere ver</label>
+        <input id="ver-libro" name="ver-libro" type="text">
+        
+        <button onclick="verLibro()">Buscar libro</button>
+        <p><b>Titulo: </b> <span id="titulo-libro-encontrado"></span></p>
+        <p><b>Paginas: </b> <span id="paginas-libro-encontradas"></span></p>
+        <p><b>Descripción: </b> <span id="descripcion-libro-encontrada"></span></p>
+        <p><b>Clasificación: </b> <span id="clasificacion-libro-encontrada"></span></p>
+        <hr>
+        <label for="titulo-libro-borrar">Ingrese el titulo del libro a borrar</label>
+        <input id="titulo-libro-borrar" name="titulo-libro-borrar" type="text">
+        <button onclick="borrarLibro()">Borrar libro</button>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
